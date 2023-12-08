@@ -7,7 +7,7 @@ const repositorioUno = document.querySelector("#repositorioUno");
 const repositorioDos = document.querySelector("#repositorioDos");
 
 curriculumVitae.addEventListener("click", function(){
-    abrirNuevaPagina("./EjemploCV.pdf");
+    abrirNuevaPagina("./CV-Mauricio Rivera.pdf");
 });
 
 demoUno.addEventListener("click", function(){
