@@ -1,4 +1,4 @@
-export function enviarFormulario(){
+export function enviarFormulario() {
     const botonEnvio = document.querySelector("#envio");
     const formularioContacto = document.querySelector("#formulario");
     const msgAsunto = document.querySelector("#errorAsunto");
@@ -6,10 +6,10 @@ export function enviarFormulario(){
     const msgMensaje = document.querySelector("#errorMensaje");
     const msgNombre = document.querySelector("#errorNombre");
 
-    botonEnvio.addEventListener("click", function(){
+    botonEnvio.addEventListener("click", function () {
 
         let campoAsunto = formularioContacto.asunto.value;
-        let campoEmail = formularioContacto.email.value;  
+        let campoEmail = formularioContacto.email.value;
         let campoMensaje = formularioContacto.mensaje.value;
         let campoNombre = formularioContacto.nombre.value;
 
@@ -18,8 +18,11 @@ export function enviarFormulario(){
         let errorMensaje = msgMensaje.innerText;
         let errorNombre = msgNombre.innerText;
 
-        if((campoAsunto != " " && errorAsunto == "Ingrese su(s) nombre(s) y su apellido") && (campoEmail != " " && errorEmail == "Ingrese su(s) nombre(s) y su apellido") && (campoMensaje != " " && errorMensaje == "Ingrese su(s) nombre(s) y su apellido") && (campoNombre != " " && errorNombre == "Ingrese su(s) nombre(s) y su apellido")){
+        if ((campoAsunto != " " && errorAsunto == "Ingrese su(s) nombre(s) y su apellido") && (campoEmail != " " &&
+            errorEmail == "Ingrese su(s) nombre(s) y su apellido") && (campoMensaje != " " &&
+                errorMensaje == "Ingrese su(s) nombre(s) y su apellido") && (campoNombre != " " &&
+                    errorNombre == "Ingrese su(s) nombre(s) y su apellido")) {
             alert("Sus datos son enviados a ninguna parte");
         }
-    });  
+    });
 }

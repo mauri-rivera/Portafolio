@@ -2,10 +2,16 @@
     .formacion__imagen{
         height: 3.625rem;
     }
+    .formacion__imagen2{
+        height: 1.20832rem;
+    }
 }
 
 @media screen and (min-width: 922px){
     .formacion__imagen{
         height: 8.125rem;
+    }
+    .formacion__imagen2{
+        height: 2.70832rem;
     }
 }
